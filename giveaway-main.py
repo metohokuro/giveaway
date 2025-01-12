@@ -50,6 +50,9 @@ class GiveawayButton(discord.ui.View):
 @bot.tree.command(name="giveaway", description="抽選を開始します")
 async def giveaway(interaction: discord.Interaction, prize: str, duration: int, content: str):
     """抽選を開始します。時間は秒単位で指定してください。"""
+    if not interaction.user.guild_permissions.administrator:
+        await interaction.response.send_message("このコマンドを実行する権限がありません。", ephemeral=True)
+        return
     #
     # await interaction.response.defer()
     print(prize,'の内容は',content)
@@ -64,6 +67,9 @@ async def giveaway(interaction: discord.Interaction, prize: str, duration: int, 
 
 @bot.tree.command(name="send_dm")
 async def send_dm(interaction: discord.Interaction, user: discord.User, message: str):
+    if not interaction.user.guild_permissions.administrator:
+        await interaction.response.send_message("このコマンドを実行する権限がありません。", ephemeral=True)
+        return
     try:
         # DMを送信
         await user.send(message)
