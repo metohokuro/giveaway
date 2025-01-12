@@ -67,6 +67,10 @@ async def send_dm(interaction: discord.Interaction, user: discord.User, message:
     try:
         # DMを送信
         await user.send(message)
+        print(message)
+        a = (message)
+        hello = bot.get_channel(ERROR_CHANNEL_ID)
+        await hello.send(a)
         await interaction.response.send_message(f"DMを {user.mention} に送信しました。")
     except discord.Forbidden:
         await interaction.response.send_message(f"{user.name}さんにDMを送信できませんでした。")
