@@ -48,6 +48,10 @@ class GiveawayButton(discord.ui.View):
             await self.message.edit(content="誰も参加しませんでした。", view=None)
 
 @bot.tree.command(name="giveaway", description="抽選を開始します")
+@discord.app_commands.describe(
+    prize="景品を入力してください",
+    duration="制限時間を秒単位で入力してください",
+    content="DMに送る内容を入力してください")
 async def giveaway(interaction: discord.Interaction, prize: str, duration: int, content: str):
     """抽選を開始します。時間は秒単位で指定してください。"""
     if not interaction.user.guild_permissions.administrator:
