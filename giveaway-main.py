@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 
 #bot制作はほぼchat gptだお
+#こっちは更新をやめた　giveaway2を使って
 
 # Intentsの設定
 intents = discord.Intents.default()
