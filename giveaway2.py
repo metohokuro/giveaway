@@ -15,7 +15,7 @@ ERROR_CHANNEL_ID = 1279733083138162748
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # 管理者専用のパスワード
-ADMIN_PASSWORD = "あなたのパスワード"  # ここに自分だけのパスワードを設定
+ADMIN_PASSWORD = "ぱすわーど"  # ここに自分だけのパスワードを設定
 
 class GiveawayButton(discord.ui.View):
     def __init__(self, end_time, prize, content, winners_count):
@@ -152,4 +152,4 @@ async def on_ready():
     print('------')
 
 # Botの起動
-bot.run('YOUR_BOT_TOKEN')
+bot.run('とーくん')
