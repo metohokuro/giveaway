@@ -8,7 +8,7 @@
 ## https://discord.com/invite/MxeTNy83K6
 ## readmeとか書いたことないからわからん
 # 作り方
-　- このリポジトリをフォークする(またはダウンロード)
-　- https://discord.com/developers/applications　にアクセスしてbotを作る
-　- 作ったbotのtokenを giveaway2.py の一番下の「とーくん」ってところに入れる
-　- giveaway2.pyを実行
+- このリポジトリをフォークする(またはダウンロード)
+- https://discord.com/developers/applications　にアクセスしてbotを作る
+- 作ったbotのtokenを giveaway2.py の一番下の「とーくん」ってところに入れる
+- giveaway2.pyを実行
