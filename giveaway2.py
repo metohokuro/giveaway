@@ -131,7 +131,7 @@ async def develop_error(interaction: discord.Interaction, error: discord.app_com
 )
 @discord.app_commands.checks.has_permissions(administrator=True)
 async def send_dm(interaction: discord.Interaction, user: discord.User, message: str):
-    """指定したユーザーにDMを送信します。"""
+    """指定したユーザーに商品配達をします"""
     try:
         await user.send(message)
         await interaction.response.send_message(f"{user.name} さんにメッセージを送信しました。", ephemeral=True)
