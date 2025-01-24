@@ -136,7 +136,7 @@ async def send_dm(interaction: discord.Interaction, user: discord.User, message:
         embed = discord.Embed(
             title="商品配達のおしらせ",
             description=message,
-            color=discord.Color.blue()  # 色の設定
+            color=discord.Color.blue())  # 色の設定
         await user.send(embed=embed)
         await interaction.response.send_message(f"{user.name} さんにメッセージを送信しました。", ephemeral=True)
     except discord.Forbidden:
