@@ -133,7 +133,11 @@ async def develop_error(interaction: discord.Interaction, error: discord.app_com
 async def send_dm(interaction: discord.Interaction, user: discord.User, message: str):
     """指定したユーザーに商品配達をします。"""
     try:
-        await user.send(message)
+        embed = discord.Embed(
+            title="商品配達のおしらせ",
+            description=message,
+            color=discord.Color.blue()  # 色の設定
+        await user.send(embed=embed)
         await interaction.response.send_message(f"{user.name} さんにメッセージを送信しました。", ephemeral=True)
     except discord.Forbidden:
         await interaction.response.send_message("指定したユーザーにDMを送れませんでした。", ephemeral=True)
