@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.dm_messages = True
 
-ERROR_CHANNEL_ID = 1279733083138162748
+
 
 
 # Botのセットアップ
