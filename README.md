@@ -9,12 +9,12 @@
 ## readmeとか書いたことないからわからん
 # 作り方
 - このリポジトリをフォークする(またはダウンロード)
-- https://discord.com/developers/application
+- https://discord.com/developers/applications
 - ↑にアクセスしてbotを作る
 - 実行するパソコンのコマンドプロンプトに↓を実行する
 - pip install discord.py
 - エディタを起動(おすすめはVScode)
 - 作ったbotのtokenを giveaway2.py の一番下の「とーくん」ってところに入れる
 - giveaway2.pyを実行
-- メッセージの送信・メッセージの読み取り・メッセージ履歴の閲覧の権限があるリンクを作ってdiscordに入れる
+- メッセージの送信・メッセージの読み取り・メッセージ履歴の閲覧・埋め込みリンクの権限があるリンクを作ってdiscordに入れる
 - あとは好きなようにしろ
