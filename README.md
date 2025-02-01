@@ -8,6 +8,7 @@
 ## https://discord.com/invite/MxeTNy83K6
 ## readmeとか書いたことないからわからん
 # 作り方
+-あ
 - このリポジトリをフォークする(またはダウンロード)
 - https://discord.com/developers/application
 - ↑にアクセスしてbotを作る
